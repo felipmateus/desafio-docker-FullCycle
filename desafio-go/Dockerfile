@@ -4,7 +4,7 @@ WORKDIR /usr/go/src/app
 
 COPY . .
 
-RUN go mod init hello-world && \
-    go build hello-world.go
+RUN go mod init full-cycle-rocks && \
+    go build full-cycle-rocks.go
 
-CMD ["./hello-world"]
+CMD ["./full-cycle-rocks"]
