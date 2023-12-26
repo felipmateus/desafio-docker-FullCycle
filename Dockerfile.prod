@@ -1,0 +1,14 @@
+FROM golang:alpine3.18 As builder
+
+WORKDIR /usr/go/src/app
+
+COPY . .
+
+RUN go mod init hello-world && \
+    go build hello-world.go
+
+
+FROM scratch
+WORKDIR /usr/go/src/app
+COPY --from=builder /usr/go/src/app .
+CMD ["./hello-world"]
