@@ -1,0 +1,7 @@
+node_modules
+desafio-node-nginx-mysql/mysql
+coverage
+.scannerwork
+.history
+dist
+.DS_Store
