@@ -8,7 +8,13 @@ O primeiro desafio consiste em criar uma imagem Docker em Go com o objetivo de m
 
 ## Desafio 2: Docker Nginx Node MySQL
 
-O segundo desafio foca na Dockerização composta por Nginx, Node.js e MySQL.
+Este desafio consiste em utilizar o Nginx como proxy reverso para uma aplicação Node.js. Ao acessar o Nginx, este fará uma chamada para a aplicação Node.js, que, por sua vez, adicionará um registro no banco de dados MySQL, cadastrando um nome na tabela "characterList".
+
+O retorno esperado da aplicação Node.js para o Nginx é:
+
+```html
+<h1>Full Cycle Rocks!</h1>
+
 
 
 
